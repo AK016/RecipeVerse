@@ -20,11 +20,17 @@ public class CustomerDTO {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "name", nullable = false)
+	@Column(name = "name", nullable = false, unique = true)
 	private String name;
 
 	@Column(name = "email", nullable = false)
 	private String email;
+
+	@Column(name = "password", nullable = false)
+	private String password;
+
+	@Column(name = "role", nullable = false)
+	private String role;
 
 	@ManyToMany
 	@JoinTable(name = "customer_likes", joinColumns = @JoinColumn(name = "customer_id"), inverseJoinColumns = @JoinColumn(name = "recipe_id"))
@@ -35,11 +41,20 @@ public class CustomerDTO {
 		super();
 	}
 
-	public CustomerDTO(Long id, String name, String email, List<RecipeDTO> likedRecipes) {
+	public CustomerDTO(String name, String email, String password, String role) {
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.role = role;
+	}
+
+	public CustomerDTO(Long id, String name, String email, String password, String role, List<RecipeDTO> likedRecipes) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
+		this.password = password;
+		this.role = role;
 		this.likedRecipes = likedRecipes;
 	}
 
@@ -67,6 +82,22 @@ public class CustomerDTO {
 		this.email = email;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
 	public List<RecipeDTO> getLikedRecipes() {
 		return likedRecipes;
 	}
@@ -77,7 +108,7 @@ public class CustomerDTO {
 
 	@Override
 	public String toString() {
-		return "CustomerDTO id=" + id + ", name=" + name + ", email=" + email + ", likedRecipes=" + likedRecipes + "\n";
+		return "CustomerDTO id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + ", role="
+				+ role + ", likedRecipes=" + likedRecipes + "\n";
 	}
-
 }
