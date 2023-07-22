@@ -17,24 +17,24 @@ import jakarta.persistence.Table;
 @Table(name = "recipes")
 public class RecipeDTO {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	@Column(name = "recipe_name", nullable = false)
-	private String recipeName;
+    @Column(name = "recipe_name", nullable = false)
+    private String recipeName;
 
-	@Column(name = "price")
-	private double price;
+    @Column(name = "price")
+    private double price;
 
-	@OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private List<IngredientDTO> ingredients;
+    @OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<IngredientDTO> ingredients;
 
-	@Column(name = "time_taken")
-	private int timeTaken;
+    @Column(name = "time_taken")
+    private int timeTaken;
 
-	@ManyToMany(mappedBy = "likedRecipes")
-	private List<CustomerDTO> likedByCustomers;
+    @ManyToMany(mappedBy = "likedRecipes")
+    private List<CustomerDTO> likedByCustomers;
 
 	// Constructors, getters, and setters
 	public RecipeDTO() {
