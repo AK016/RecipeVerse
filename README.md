@@ -26,7 +26,7 @@ The ReciperVerse application consists of several components, including:
 - **DTO (Data Transfer Objects)**: Represents the data structures for recipes, ingredients, and users.
 
 ## ERDiagram
-![ER-Diagram](https://github.com/ak016/)
+![ER-Diagram](https://github.com/AK016/toothsome-downtown-2195-/blob/Review-Day1/ERDiagram.png)
 
 
 ## Features
