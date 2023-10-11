@@ -41,12 +41,11 @@ ReciperVerse offers the following key features:
 To run the ReciperVerse console-based application, follow these steps:
 
 1. Ensure you have Java installed on your system.
-2. Clone the ReciperVerse repository from [GitHub](https://github.com/your-repo-url).
+2. Clone the ReciperVerse repository from [GitHub](https://github.com/AK016/toothsome-downtown-2195-.git).
 3. Navigate to the project directory in your terminal.
 4. Compile the application using `javac Main.java`.
 5. Run the application using `java Main`.
 
-Please replace `[GitHub](https://github.com/AK016/toothsome-downtown-2195-.git)` with the actual GitHub repository URL for your project.
 
 ## Usage
 
