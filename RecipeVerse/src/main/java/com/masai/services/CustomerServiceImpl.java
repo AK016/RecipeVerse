@@ -2,19 +2,19 @@
 package com.masai.services;
 
 import com.masai.DAO.UserDAO;
+import com.masai.DAO.UserDAOImpl;
 import com.masai.DTO.CustomerDTO;
 
 public class CustomerServiceImpl implements CustomerService {
-    private final UserDAO userDAO;
+    private UserDAO userDAO=new UserDAOImpl();
 
     public CustomerServiceImpl(UserDAO userDAO) {
         this.userDAO = userDAO;
     }
 
     @Override
-    public CustomerDTO getCustomerById(Long id) {
-        // Implement the logic to get a customer by ID
-        return null;
+    public CustomerDTO getCustomerById(String username) {
+        return userDAO.findUserByUsername(username);
     }
 
     @Override

@@ -27,24 +27,24 @@ public class RecipeDTO {
     @Column(name = "price")
     private double price;
 
-    @OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<IngredientDTO> ingredients;
 
     @Column(name = "time_taken")
     private int timeTaken;
 
-    @ManyToMany(mappedBy = "likedRecipes")
+    @ManyToMany(mappedBy = "likedRecipes", fetch = FetchType.EAGER)
     private List<CustomerDTO> likedByCustomers;
+
 
 	// Constructors, getters, and setters
 	public RecipeDTO() {
 		super();
 	}
 
-	public RecipeDTO(Long id, String recipeName, double price, List<IngredientDTO> ingredients, int timeTaken,
+	public RecipeDTO(String recipeName, double price, List<IngredientDTO> ingredients, int timeTaken,
 			List<CustomerDTO> likedByCustomers) {
 		super();
-		this.id = id;
 		this.recipeName = recipeName;
 		this.price = price;
 		this.ingredients = ingredients;
