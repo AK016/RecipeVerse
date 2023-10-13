@@ -37,6 +37,7 @@ ReciperVerse offers the following key features:
 7. **Like Recipe** (Note: This feature is mentioned in the code but not fully implemented).
 
 ## Getting Started
+You can check the video presentation of the application [Demo Video](https://drive.google.com/file/d/1-m7O_z0-q6ettktfl8Pr74acSauiy9Rt/view?usp=sharing)
 
 To run the ReciperVerse console-based application, follow these steps:
 
