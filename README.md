@@ -5,11 +5,12 @@ ReciperVerse is a console-based Java application for managing recipes, ingredien
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Application Structure](#application-structure)
-3. [Features](#features)
-4. [Getting Started](#getting-started)
-5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
+3. [ERDiagram](#erdiagram)
+4. [Features](#features)
+5. [Getting Started](#getting-started)
+6. [Usage](#usage)
+7. [Contributing](#contributing)
+8. [License](#license)
 
 ## Introduction
 
@@ -23,6 +24,10 @@ The ReciperVerse application consists of several components, including:
 - **Services**: Contains service classes for handling business logic.
 - **DAO (Data Access Objects)**: Provides data access to the database.
 - **DTO (Data Transfer Objects)**: Represents the data structures for recipes, ingredients, and users.
+
+## ERDiagram
+![ER-Diagram](https://github.com/AK016/toothsome-downtown-2195-/blob/Review-Day1/ERDiagram.png)
+
 
 ## Features
 
