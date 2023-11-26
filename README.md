@@ -63,3 +63,4 @@ The ReciperVerse console-based application is available under the [MIT License](
 ---
 
 Enjoy using ReciperVerse's console-based interface for managing recipes, ingredients, and user accounts. If you have any questions or need further assistance, please refer to the official documentation or reach out to the project maintainers.
+
