@@ -58,6 +58,7 @@ If you'd like to contribute to the ReciperVerse project, feel free to submit pul
 
 ## License
 
+
 The ReciperVerse console-based application is available under the [MIT License](LICENSE). You are free to use, modify, and distribute the code according to the terms of the license.
 
 ---
